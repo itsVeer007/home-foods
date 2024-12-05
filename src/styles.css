@@ -1,67 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-/* @import '~video.js/dist/video-js.css'; */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 html,
 body {
-    height: 100%;
-    margin: 0;
-    font-family: "Montserrat", sans-serif !important;
-    /* color: black; */
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 
 
 p {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 .custom-form-control {
-    border: none !important;
-    padding: 0 !important;
-    font-size: 12px !important;
-    box-shadow: none !important;
-    pointer-events: none !important;
-    background-color: transparent !important;
-    color: #ffffff !important;
-  }
+  border: none !important;
+  padding: 0 !important;
+  font-size: 12px !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
 
 .row {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 .pointer {
-    cursor: pointer !important;
+  cursor: pointer !important;
 }
 
 
 .table-container {
-    max-height: 70vh;
-    overflow-y: auto;
-    /* max-width: 80vw; */
+  max-height: 70vh;
+  overflow-y: auto;
+  /* max-width: 80vw; */
 }
 
 .table thead tr th {
-    position: sticky;
-    top: 0px;
-    font-size: 12px;
-    font-weight: 100;
-    font-family: "Montserrat", sans-serif !important;
-    background-color:#084982;
-    
-  
-    color: #fff;
-    text-transform: uppercase;
+  position: sticky;
+  top: 0px;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif !important;
+  background-color: #084982;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .table tbody tr td {
-    font-size: 12px;
-    font-weight: 100;
-    font-family: "Montserrat", sans-serif !important;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif !important;
 }
+
 .dialog-content {
   padding: 10px 20px;
   /* max-width: 80vw;
@@ -73,39 +68,39 @@ p {
 
 /* new-dialog */
 .new-dialog {
-    display: none;
-    position: fixed;
-    z-index: 99;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, 50%);
-    background-color: #ffffff;
-  }
-  
-  .dialog-content {
-    padding: 5px;
-    max-width: 800px;
-    max-height: 500px;
-    overflow-y: auto;
-  }
-  
-  
-  .dialog-header {
-    background-color: #FD6327;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-  }
-  
-  .dialog-header p{
-    font-size: 14px;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #ffffff;
+}
+
+.dialog-content {
+  padding: 5px;
+  max-width: 800px;
+  max-height: 500px;
+  overflow-y: auto;
+}
 
 
-  /** Toggle Switch **/
+.dialog-header {
+  background-color: #FD6327;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.dialog-header p {
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+
+/** Toggle Switch **/
 .on-off-toggle {
   width: 55px;
   height: 24px;
@@ -145,7 +140,7 @@ p {
   text-transform: lowercase;
   font-size: 12px;
   font-weight: bold;
-  content: 'No' ;
+  content: 'No';
   color: #D34124;
   padding-left: 26px;
   transition: all 0.4s;
@@ -157,24 +152,22 @@ p {
   opacity: 0;
 }
 
-.on-off-toggle__input:checked +
-.on-off-toggle__slider {
+.on-off-toggle__input:checked+.on-off-toggle__slider {
   background-color: #fff;
   border: 1px solid #00573c;
 }
 
-.on-off-toggle__input +
-.on-off-toggle__slider {
+.on-off-toggle__input+.on-off-toggle__slider {
   background-color: #F8F8F8;
   border: 1px solid #D34124;
 }
 
-.on-off-toggle__input:checked + :before {
+.on-off-toggle__input:checked+ :before {
   transform: translateX(35px);
-    background-color: #00573c;
+  background-color: #00573c;
 }
 
-.on-off-toggle__input:checked + :after {
+.on-off-toggle__input:checked+ :after {
   content: 'Yes';
   color: #00573c;
   padding-left: 8px;
